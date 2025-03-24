@@ -1,0 +1,253 @@
+#root{
+  height:100vh;
+  width:100%;
+  background-image: url("wppic3.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+main{
+  height:100%;
+  width:100%;
+  backdrop-filter: blur(34px);
+  /* border:3px solid red; */
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 90%;
+  place-content:center;
+}
+.main_childs{
+  /* border:2px solid green; */
+  display:grid;
+  grid-template-columns: 80%;
+  grid-template-rows: 10% 70%;
+  place-content: center;
+  /* gap:3%; */
+}
+.main_childs > div{
+  border:1px solid black;
+}
+/* .main_childs > div > div{
+  border:1px solid red;
+} */
+.main_childs >div:nth-child(1){
+  background-color: rgb(34, 74, 47);
+  padding-left: 5%;
+  display:grid;
+ grid-template-columns: 10% 30%;
+ grid-template-rows: 80%;
+ align-content: center;
+  letter-spacing: 7px;
+  font-size: 100%;
+  gap:3%;
+  color:white;
+}
+.name{
+ 
+  display:grid;
+  align-content:center;
+}
+.profile{
+  border-radius: 50%;
+  background-image:url("profiledp.jpeg");
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+}
+#binod::after{
+  content: " ";
+ height:2%;
+ width:1%;
+ border-radius:50%;
+  background-color:rgb(35, 239, 35);
+  position:absolute;
+  top:20%;
+  left:10%;
+}
+#dolly::after{
+  content: " ";
+  height:2%;
+  width:1%;
+  border-radius:50%;
+   background-color:rgb(35, 239, 35);
+   position:absolute;
+   top:20%;
+   left:60%;
+}
+.main_childs_2ndchild{
+  display:grid;
+  grid-template-columns: 98%;
+  grid-template-rows: 85% 12%;
+  place-content: center;
+  background-image:url("wp2.jpg");
+}
+
+.msg_content{
+  overflow: auto;
+  padding:2%;
+  /* border:3px solid red; */
+  display:grid;
+  grid-template-columns: 100%;
+  grid-auto-rows:min-content;
+  gap:1%;
+  font-size:120%;
+  
+}
+.msg_content::-webkit-scrollbar{
+ 
+  /* background-color:rgb(63, 60, 60); */
+  background-color: rgb(40, 39, 39);
+  width:10px;
+}
+.msg_content::-webkit-scrollbar-thumb{
+ 
+  background-color:rgb(94, 88, 88);
+ 
+}
+
+.msg_content > div{
+    /* border:2px solid red; */
+     display: grid;
+    grid-template-columns: 45%;
+     grid-auto-rows: min-content;
+     align-content:center;
+     }
+     .msg_content > div > div{
+      
+      padding:4%;
+      border:1px solid black;
+      border-radius: 7%;
+      /* display:grid; */
+      /* place-content: center; */
+      color:white;
+      font-size:87%;
+      letter-spacing:2px;
+      
+      
+     }
+
+     .only_my{
+       display:grid;
+       justify-content: end;
+       
+     }
+     .only_my > div{
+      background-color: rgb(12, 78, 12);
+      
+     }
+     .only_my2 > div{
+      background-color: rgb(17, 40, 25);
+     }
+     .only_other{
+      display:grid;
+      justify-content: end;
+     
+    }
+    .only_other > div{
+      background-color: rgb(12, 78, 12);
+      
+     }
+     .only_other2 > div{
+      background-color: rgb(17, 40, 25);
+     }
+     
+.chat2nd{
+  /* border:1px solid black; */
+  display: grid;
+  grid-template-columns: 85% 10%;
+  grid-template-rows: 1fr;
+  place-content: center;
+}
+/* .chat2nd > div{
+  border:1px solid green;
+} */
+.chat2nd div:nth-child(1){
+ border:1px solid black;
+
+ box-shadow:0px 0px 10px black;
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+.chat2nd div:nth-child(2){
+  display:grid;
+ 
+  place-content: center;
+}
+input{
+  font-size:90%;
+  background-color: rgb(34, 74, 47);
+ 
+  padding-left:3%;
+  color:white;
+  border:none;
+}
+.send{
+  color:green;
+  /* background-color: rgb(34, 74, 47); */
+  /* height:50px;
+  width:50px; */
+  font-size:250%;
+  /* backdrop-filter: blur(20px); */
+  
+}
+.send:active{
+  color:black;
+}
+p{
+  height:40%;
+  /* border:1px solid red; */
+  display:grid;
+  place-content: center;
+  letter-spacing: 3px;
+  color:rgb(198, 211, 14);
+
+}
+#call1{
+  height:5%;
+  width:10%;
+ position:absolute;
+ top:16%;
+ left:34%;
+  
+  /* border:5px solid red; */
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+
+}
+.vdo,.cl{
+  color:rgb(30, 180, 30);
+  font-size:170%;
+}
+#call2{
+  height:5%;
+  width:10%;
+ position:absolute;
+ top:16%;
+ left:84%;
+
+ /* border:5px solid red; */
+ display:grid;
+ grid-template-columns: 1fr 1fr;
+ grid-template-rows: 1fr;
+
+}
+.vdo,.cl:active{
+  color:black;
+}
+#swap{
+  height:9%;
+  width:8%;
+  /* border:2px solid red; */
+  color:green;
+  text-shadow: 0px 0px 4px green;
+  position:absolute;
+  left:46.20%;
+  top:45%;
+  display: grid;
+  place-content: center;
+  font-size:200%;
+  font-weight: bold;
+  letter-spacing:25px;
+  
+}
