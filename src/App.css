@@ -107,7 +107,7 @@ main{
 .msg_content > div{
     /* border:2px solid red; */
      display: grid;
-    grid-template-columns: 45%;
+    grid-template-columns: 40%;
      grid-auto-rows: min-content;
      align-content:center;
      }
@@ -116,8 +116,7 @@ main{
       padding:4%;
       border:1px solid black;
       border-radius: 7%;
-      /* display:grid; */
-      /* place-content: center; */
+      
       color:white;
       font-size:87%;
       letter-spacing:2px;
