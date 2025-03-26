@@ -76,8 +76,9 @@ main{
 .main_childs_2ndchild{
   display:grid;
   grid-template-columns: 98%;
-  grid-template-rows: 85% 12%;
+  grid-template-rows: 80% 10%;
   place-content: center;
+  gap:4%;
   background-image:url("wp2.jpg");
 }
 
@@ -116,7 +117,7 @@ main{
       padding:4%;
       border:1px solid black;
       border-radius: 7%;
-      
+      word-wrap: break-word;
       color:white;
       font-size:87%;
       letter-spacing:2px;
@@ -152,9 +153,12 @@ main{
 .chat2nd{
   /* border:1px solid black; */
   display: grid;
-  grid-template-columns: 85% 10%;
+  grid-template-columns: 75% 15%;
   grid-template-rows: 1fr;
   place-content: center;
+  /* gap:5%; */
+  align-content:center;
+ justify-content: center;
 }
 /* .chat2nd > div{
   border:1px solid green;

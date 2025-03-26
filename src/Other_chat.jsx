@@ -4,7 +4,7 @@ import { IoCall } from "react-icons/io5";
 import React from 'react'
 function Other_chat(props)
 {
-     // props.text  , props.settext
+     // props.text  , props.settext props.ref ,props.scroll
      let [other_input,setother] = React.useState("")
 
      function option()
@@ -13,7 +13,7 @@ function Other_chat(props)
      }
     return(
         <>
-            <div className="msg_content">
+            <div className="msg_content" ref={props.ref}>
             <p>Welcome to our community ! </p>
                 {
                     props.text.map((el,index)=>{
@@ -45,6 +45,7 @@ function Other_chat(props)
                                {
                                 props.settext([...props.text,"2"+other_input]) ;
                                 setother('');
+                                props.scroll()
                                }
                          } } />
                 </div>
